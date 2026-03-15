@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>主页</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        background-image: url("long.jpg");
+      }
+      /* {
+        border: 1px solid black;
+      }*/
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      button {
+        background-color: transparent;
+        color: black;
+        border: none;
+        text-align: center;
+        cursor: grab;
+      }
+      button:hover {
+        background-color: #cee009;
+      }
+      .column {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .text {
+        font-size: 30px;
+        padding: 20px;
+      }
+      .img {
+        height: 280px;
+        width: 320px;
+        margin: 5px;
+      }
+      .img1 {
+        height: 320px;
+        width: 280px;
+        margin: 5px;
+      }
+      @media(max-width:600px){
+        .column1{
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body class="flex column1">
+    <div class="flex flex1 column">
+      <div class="flex column1">
+        <img class="img" src="w1.jpg" alt="Photo 1" />
+        <img class="img" src="w2.jpg" alt="Photo 2" />
+        <img class="img" src="w3.jpg" alt="Photo 3" />
+      </div>
+      <div class="flex column1">
+        <img class="img1" src="w4.jpg" alt="Photo 4" />
+        <img class="img1" src="w5.jpg" alt="Photo 5" />
+    </div>
+      <div class="flex">
+      </div>
+    </div>
+    </div>
+    <div style="width: 200px" class="flex column">
+      <button class="text" onclick="window.location.href = 'zy.html'">
+        主页
+      </button>
+      <button class="text" onclick="window.location.href = 'me.html'">
+        关于我
+      </button>
+      <button class="text" onclick="window.location.href = 'photo.html'">
+        相册
+      </button>
+    </div>
+  </body>
+</html>
